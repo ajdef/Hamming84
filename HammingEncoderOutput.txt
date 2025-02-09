@@ -1,0 +1,19 @@
+# run 1000ns
+Successful Encoding for 	input 0000 and output 00000000
+Successful Encoding for 	input 0001 and output 10000111
+Successful Encoding for 	input 0010 and output 10011001
+Successful Encoding for 	input 0011 and output 00011110
+Successful Encoding for 	input 0100 and output 10101010
+Successful Encoding for 	input 0101 and output 00101101
+Successful Encoding for 	input 0110 and output 00110011
+Successful Encoding for 	input 0111 and output 10110100
+Successful Encoding for 	input 1000 and output 01001011
+Successful Encoding for 	input 1001 and output 11001100
+Successful Encoding for 	input 1010 and output 11010010
+Successful Encoding for 	input 1011 and output 01010101
+Successful Encoding for 	input 1100 and output 11100001
+Successful Encoding for 	input 1101 and output 01100110
+Successful Encoding for 	input 1110 and output 01111000
+Successful Encoding for 	input 1111 and output 11111111
+         16 SUCCESSFUL ENCODINGS 	           0 FAILED ENCODINGS
+$finish called at time : 80 ns : File "C:/Vivado/Hamming74/Hamming74.srcs/sim_1/new/hamming_encoder_tb.v" Line 23

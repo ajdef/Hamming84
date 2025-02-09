@@ -1,0 +1,91 @@
+# run 1000ns
+
+ Simulating Expected Inputs:
+                   0 - ENCODED INPUT: xxxxxxxx	PARITY BIT: x	OUTPUT DATA: xxxx	SEC: x	DED: x
+                   5 - ENCODED INPUT: 00000000	PARITY BIT: 0	OUTPUT DATA: 0000	SEC: 0	DED: 0
+                  10 - ENCODED INPUT: 10000111	PARITY BIT: 1	OUTPUT DATA: 0001	SEC: 0	DED: 0
+                  15 - ENCODED INPUT: 10011001	PARITY BIT: 1	OUTPUT DATA: 0010	SEC: 0	DED: 0
+                  20 - ENCODED INPUT: 00011110	PARITY BIT: 0	OUTPUT DATA: 0011	SEC: 0	DED: 0
+                  25 - ENCODED INPUT: 10101010	PARITY BIT: 1	OUTPUT DATA: 0100	SEC: 0	DED: 0
+                  30 - ENCODED INPUT: 00101101	PARITY BIT: 0	OUTPUT DATA: 0101	SEC: 0	DED: 0
+                  35 - ENCODED INPUT: 00110011	PARITY BIT: 0	OUTPUT DATA: 0110	SEC: 0	DED: 0
+                  40 - ENCODED INPUT: 10110100	PARITY BIT: 1	OUTPUT DATA: 0111	SEC: 0	DED: 0
+                  45 - ENCODED INPUT: 01001011	PARITY BIT: 0	OUTPUT DATA: 1000	SEC: 0	DED: 0
+                  50 - ENCODED INPUT: 11001100	PARITY BIT: 1	OUTPUT DATA: 1001	SEC: 0	DED: 0
+                  55 - ENCODED INPUT: 11010010	PARITY BIT: 1	OUTPUT DATA: 1010	SEC: 0	DED: 0
+                  60 - ENCODED INPUT: 01010101	PARITY BIT: 0	OUTPUT DATA: 1011	SEC: 0	DED: 0
+                  65 - ENCODED INPUT: 11100001	PARITY BIT: 1	OUTPUT DATA: 1100	SEC: 0	DED: 0
+                  70 - ENCODED INPUT: 01100110	PARITY BIT: 0	OUTPUT DATA: 1101	SEC: 0	DED: 0
+                  75 - ENCODED INPUT: 01111000	PARITY BIT: 0	OUTPUT DATA: 1110	SEC: 0	DED: 0
+                  80 - ENCODED INPUT: 11111111	PARITY BIT: 1	OUTPUT DATA: 1111	SEC: 0	DED: 0
+
+Simulating a single bit flip on all input vectors, expecting SEC = 1:
+                  90 - ENCODED INPUT: 10000000	PARITY BIT: 1	OUTPUT DATA: 0000	SEC: 1	DED: 0
+                  95 - ENCODED INPUT: 10001111	PARITY BIT: 1	OUTPUT DATA: 0001	SEC: 1	DED: 0
+                 100 - ENCODED INPUT: 10111001	PARITY BIT: 1	OUTPUT DATA: 0010	SEC: 1	DED: 0
+                 105 - ENCODED INPUT: 00011010	PARITY BIT: 0	OUTPUT DATA: 0011	SEC: 1	DED: 0
+                 110 - ENCODED INPUT: 10101011	PARITY BIT: 1	OUTPUT DATA: 0100	SEC: 1	DED: 0
+                 115 - ENCODED INPUT: 00101001	PARITY BIT: 0	OUTPUT DATA: 0101	SEC: 1	DED: 0
+                 120 - ENCODED INPUT: 00110010	PARITY BIT: 0	OUTPUT DATA: 0110	SEC: 1	DED: 0
+                 125 - ENCODED INPUT: 10110101	PARITY BIT: 1	OUTPUT DATA: 0111	SEC: 1	DED: 0
+                 130 - ENCODED INPUT: 01101011	PARITY BIT: 0	OUTPUT DATA: 1000	SEC: 1	DED: 0
+                 135 - ENCODED INPUT: 11001110	PARITY BIT: 1	OUTPUT DATA: 1001	SEC: 1	DED: 0
+                 140 - ENCODED INPUT: 01010010	PARITY BIT: 0	OUTPUT DATA: 1010	SEC: 1	DED: 0
+                 145 - ENCODED INPUT: 01010001	PARITY BIT: 0	OUTPUT DATA: 1011	SEC: 1	DED: 0
+                 150 - ENCODED INPUT: 11110001	PARITY BIT: 1	OUTPUT DATA: 1100	SEC: 1	DED: 0
+                 155 - ENCODED INPUT: 01101110	PARITY BIT: 0	OUTPUT DATA: 1101	SEC: 1	DED: 0
+                 160 - ENCODED INPUT: 01110000	PARITY BIT: 0	OUTPUT DATA: 1110	SEC: 1	DED: 0
+                 165 - ENCODED INPUT: 11101111	PARITY BIT: 1	OUTPUT DATA: 1111	SEC: 1	DED: 0
+
+Simulating a double bit flip on all input vectors, expecting DED = 1:
+                 175 - ENCODED INPUT: 00100100	PARITY BIT: 0	OUTPUT DATA: 0101	SEC: 0	DED: 1
+                 180 - ENCODED INPUT: 10011111	PARITY BIT: 1	OUTPUT DATA: 0011	SEC: 0	DED: 1
+                 185 - ENCODED INPUT: 10111011	PARITY BIT: 1	OUTPUT DATA: 0110	SEC: 0	DED: 1
+                 190 - ENCODED INPUT: 00011010	PARITY BIT: 0	OUTPUT DATA: 0011	SEC: 1	DED: 0
+                 195 - ENCODED INPUT: 10001000	PARITY BIT: 1	OUTPUT DATA: 0000	SEC: 0	DED: 1
+                 200 - ENCODED INPUT: 10101001	PARITY BIT: 1	OUTPUT DATA: 0100	SEC: 0	DED: 1
+                 205 - ENCODED INPUT: 10110010	PARITY BIT: 1	OUTPUT DATA: 0110	SEC: 0	DED: 1
+                 210 - ENCODED INPUT: 11110101	PARITY BIT: 1	OUTPUT DATA: 1111	SEC: 0	DED: 1
+                 215 - ENCODED INPUT: 01101111	PARITY BIT: 0	OUTPUT DATA: 1101	SEC: 0	DED: 1
+                 220 - ENCODED INPUT: 10001110	PARITY BIT: 1	OUTPUT DATA: 0001	SEC: 0	DED: 1
+                 225 - ENCODED INPUT: 01011010	PARITY BIT: 0	OUTPUT DATA: 1010	SEC: 0	DED: 1
+                 230 - ENCODED INPUT: 01010000	PARITY BIT: 0	OUTPUT DATA: 1010	SEC: 0	DED: 1
+                 235 - ENCODED INPUT: 11110011	PARITY BIT: 1	OUTPUT DATA: 1110	SEC: 0	DED: 1
+                 240 - ENCODED INPUT: 01111110	PARITY BIT: 0	OUTPUT DATA: 1111	SEC: 0	DED: 1
+                 245 - ENCODED INPUT: 01010000	PARITY BIT: 0	OUTPUT DATA: 1010	SEC: 0	DED: 1
+                 250 - ENCODED INPUT: 11101011	PARITY BIT: 1	OUTPUT DATA: 1100	SEC: 0	DED: 1
+
+Simulating random bit flips (MAX 2) on all input vectors: 
+                 265 - Masking with random value:         12
+                 265 - ENCODED INPUT: 00001100	PARITY BIT: 0	OUTPUT DATA: 0001	SEC: 0	DED: 1
+                 270 - Masking with random value:         24
+                 270 - ENCODED INPUT: 10011111	PARITY BIT: 1	OUTPUT DATA: 0011	SEC: 0	DED: 1
+                 275 - Masking with random value:         40
+                 275 - ENCODED INPUT: 10110001	PARITY BIT: 1	OUTPUT DATA: 0110	SEC: 0	DED: 1
+                 280 - Masking with random value:        129
+                 280 - ENCODED INPUT: 10011111	PARITY BIT: 1	OUTPUT DATA: 0011	SEC: 0	DED: 1
+                 285 - Masking with random value:         80
+                 285 - ENCODED INPUT: 11111010	PARITY BIT: 1	OUTPUT DATA: 1110	SEC: 0	DED: 1
+                 290 - Masking with random value:          8
+                 290 - ENCODED INPUT: 00100101	PARITY BIT: 0	OUTPUT DATA: 0101	SEC: 1	DED: 0
+                 295 - Masking with random value:        132
+                 295 - ENCODED INPUT: 10110111	PARITY BIT: 1	OUTPUT DATA: 0111	SEC: 0	DED: 1
+                 300 - Masking with random value:         40
+                 300 - ENCODED INPUT: 10011100	PARITY BIT: 1	OUTPUT DATA: 0011	SEC: 0	DED: 1
+                 305 - Masking with random value:         64
+                 305 - ENCODED INPUT: 00001011	PARITY BIT: 0	OUTPUT DATA: 1000	SEC: 1	DED: 0
+                 310 - Masking with random value:         33
+                 310 - ENCODED INPUT: 11101101	PARITY BIT: 1	OUTPUT DATA: 1101	SEC: 0	DED: 1
+                 315 - Masking with random value:         18
+                 315 - ENCODED INPUT: 11000000	PARITY BIT: 1	OUTPUT DATA: 1000	SEC: 0	DED: 1
+                 320 - Masking with random value:        132
+                 320 - ENCODED INPUT: 11010001	PARITY BIT: 1	OUTPUT DATA: 1010	SEC: 0	DED: 1
+                 325 - Masking with random value:         12
+                 325 - ENCODED INPUT: 11101101	PARITY BIT: 1	OUTPUT DATA: 1101	SEC: 0	DED: 1
+                 330 - Masking with random value:         40
+                 330 - ENCODED INPUT: 01001110	PARITY BIT: 0	OUTPUT DATA: 1001	SEC: 0	DED: 1
+                 335 - Masking with random value:        128
+                 335 - ENCODED INPUT: 11111000	PARITY BIT: 1	OUTPUT DATA: 1110	SEC: 1	DED: 0
+                 340 - Masking with random value:         10
+                 340 - ENCODED INPUT: 11110101	PARITY BIT: 1	OUTPUT DATA: 1111	SEC: 0	DED: 1
+$finish called at time : 350 ns : File "C:/Vivado/Hamming74/Hamming74.srcs/sim_1/new/hamming_decoder_tb.v" Line 148
