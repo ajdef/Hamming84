@@ -12,17 +12,19 @@ The number of parity bits utilized to support a given data word is provided by t
 2^r >= d + r + 1
 
 where:<br />
-r = redundant bits<br />
+r = parity/redundant bits<br />
 d = data bits<br />
 
 Within this implementation, 4 data bits are used. Therefore, we can determine the number of parity bits needed:
 
 2^r >= 4 + r + 1
 
-From this, we see that 3 parity bits are needed to cover 4 input bits. Even parity will be used, meaning any bit field with an odd number of bits will have a parity bit set to 1, causing the total number of bits to remain even.
+Each data bit is mapped to a combination of parity bits, which are placed at the powers of 2 (2^2, 2^1, 2^0) within the encoded word. Even parity will be used, meaning any bit field with an odd number of bits will have a parity bit set to 1, causing the total number of bits (including the parity bit itself) to remain even.
+
+This can be represented as a 3 entry wide truth table (r = 3):
 
 Parity bit truth table:
-|Bit #|2^3|2^2|2^1|
+|Bit #|P3|P2|P1|
 |------|---|---|---|
 | 0 | 0 | 0 | 0 |
 | 1 | 0 | 0 | **1** |
@@ -33,8 +35,18 @@ Parity bit truth table:
 | 6 | **1** | **1** | 0 |
 | 7 | **1** | **1** | **1** |
 
+### How parity bits cover data bits
+**P1 (Least Significant Bit)**
+ - 1
+ - 2
 
+**P2 (Middle Significant Bit)**
+ - 1
+ - 2
 
+**P3 (Most Significant Bit)**
+ - 1 
+ - 2
 
 
 ## To improve upon:
